@@ -8,7 +8,7 @@ public class Transactions {
 	private int source_type_id ; 
 	private int dest_type_id ; 
 	private long txn_amount;
-	private Users user;
+	
 	
 	public int getTxn_id() {
 		return txn_id;
