@@ -44,7 +44,7 @@ enum SourceType {
 
 public class Sources {
     private int sourceId;
-    private SourceType sourceType; // Changed from String to SourceType enum
+    private SourceType sourceType; 
 
     public Sources(int sourceId, SourceType sourceType) {
         this.sourceId = sourceId;
@@ -71,21 +71,14 @@ public class Sources {
         this.sourceType = sourceType;
     }
 
-    // Get SourceType Code (if needed)
+
     public int getSourceTypeCode() {
         return sourceType.getCode();
     }
 
-    // Get SourceType Description (if needed)
+  
     public String getSourceTypeDesc() {
         return sourceType.getSourceTypeName();
     }
 
-    @Override
-    public String toString() {
-        return "Sources{" +
-                "sourceId=" + sourceId +
-                ", sourceType=" + sourceType +
-                '}';
-    }
 }
